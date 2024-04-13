@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link rel="stylesheet" href="./notas.css">
+    <link rel="shorcut icon" href="./nota.png">
+</head>
+<body>
+    <header>
+        <h1>NOTAS</h1>
+        <div id="date">
+            <div id="hora"></div>
+        </div>
+    </header>
+    <main>
+        <form onsubmit="addNewTask(event)" id="sec1">
+            <input id="texto" name="taskText" type="text" placeholder="Ingresa una tarea..." class="roundBorder">
+            <button id="suma"><img id="sum" src="./suma.png" alt="suma"></button>
+            <button id="ordenar" class="roundBorder" onclick="renderOrderedTasks()">ORDENAR</button>
+        </form>
+        <section id="sec2">
+
+        </section>
+    </main>
+</body>
+<script src="./notas.js"></script>
+</html>
